@@ -13,7 +13,7 @@
  * exactly as shipped.
  */
 window.__ModuleLoader__.load({
-	id: "dsh-web-chat",
+	id: "dsh-chat-web",
 	factory: (require) => {
 		/** Dictionary namespace owned by this bundle. */
 		const NS = "sidebar-work-chat-switch";
@@ -22,7 +22,7 @@ window.__ModuleLoader__.load({
 		/** Custom event other client code can listen for. */
 		const MODE_EVENT = "dsh:work-chat-mode";
 		/** DOM style id, mirroring the shipped client-style convention. */
-		const CSS_ID = "dsh-web-chat/WorkChatSwitch.css";
+		const CSS_ID = "dsh-chat-web/WorkChatSwitch.css";
 		/** Marker attribute on the injected row. */
 		const ROW_ATTR = "data-dsw-work-chat-switch";
 		/** Owner marker: only the newest module instance may own the row. */
@@ -258,7 +258,7 @@ window.__ModuleLoader__.load({
 			}
 			try {
 				const tag = document.createElement("style");
-				tag.dataset.plugin = "dsh-web-chat";
+				tag.dataset.plugin = "dsh-chat-web";
 				tag.dataset.pluginCss = CSS_ID;
 				tag.textContent = css;
 				document.head.appendChild(tag);

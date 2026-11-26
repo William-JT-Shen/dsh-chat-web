@@ -1,5 +1,5 @@
 {
-  "name": "dsh-web-chat",
+  "name": "dsh-chat-web",
   "version": "0.1.0",
   "description": "Sidebar Work/Chat switch for DeepSeek Harness with a live chat.deepseek.com history panel and one-click continuation as real Harness sessions.",
   "keywords": [
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/William-JT-Shen/dsh-web-chat.git"
+    "url": "git+https://github.com/William-JT-Shen/dsh-chat-web.git"
   },
   "bugs": {
-    "url": "https://github.com/William-JT-Shen/dsh-web-chat/issues"
+    "url": "https://github.com/William-JT-Shen/dsh-chat-web/issues"
   },
-  "homepage": "https://github.com/William-JT-Shen/dsh-web-chat#readme",
+  "homepage": "https://github.com/William-JT-Shen/dsh-chat-web#readme",
   "type": "module",
   "exports": {
     ".": "./index.js",

@@ -1,4 +1,4 @@
-# dsh-web-chat
+# dsh-chat-web
 
 A [DeepSeek Harness](https://github.com/deepseek-ai) plugin that adds a **Work / Chat** switch above the sidebar's *New Session* button and brings your DeepSeek **web** chat history into Harness.
 
@@ -32,14 +32,14 @@ A [DeepSeek Harness](https://github.com/deepseek-ai) plugin that adds a **Work /
 ### Option 1 — install from npm (after publishing)
 
 ```text
-plugin_manager install_bundle  target = dsh-web-chat
+plugin_manager install_bundle  target = dsh-chat-web
 ```
 
 Harness pulls the package from the configured npm registry and enables it in the current profile.
 
 ### Option 2 — install from a local folder
 
-Unpack this folder anywhere (for example `D:\plugins\dsh-web-chat`) and ask Harness to run:
+Unpack this folder anywhere (for example `D:\plugins\dsh-chat-web`) and ask Harness to run:
 
 ```text
 plugin_manager install_bundle  target = <absolute path to that folder>
@@ -49,8 +49,8 @@ plugin_manager install_bundle  target = <absolute path to that folder>
 
 1. Copy the folder somewhere permanent (keep `package.json` at its root).
 2. Edit `%USERPROFILE%\.dsh\profiles\desktop\package.json`:
-   - add `"dsh-web-chat": "file:<absolute path>"` to `dependencies`;
-   - add `"dsh-web-chat"` to `dsh.profile.bundles`.
+   - add `"dsh-chat-web": "file:<absolute path>"` to `dependencies`;
+   - add `"dsh-chat-web"` to `dsh.profile.bundles`.
 3. Run `pnpm install` inside that profile folder.
 4. Restart Harness.
 
@@ -108,7 +108,7 @@ All three should print `all checks passed` / `PASS`.
 git init
 git add .
 git commit -m "feat: sidebar work/chat switch with DeepSeek web history"
-git remote add origin https://github.com/William-JT-Shen/dsh-web-chat.git
+git remote add origin https://github.com/William-JT-Shen/dsh-chat-web.git
 git push -u origin main
 
 npm login

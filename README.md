@@ -1,4 +1,4 @@
-# dsh-web-chat
+# dsh-chat-web
 
 DeepSeek Harness 插件：在侧栏「新会话」上方加入「**工作 / 对话**」切换，并把网页版 DeepSeek 的历史对话接进 Harness。
 
@@ -31,7 +31,7 @@ DeepSeek Harness 插件：在侧栏「新会话」上方加入「**工作 / 对�
 
 ### 方式一：让 Harness 自己装（推荐）
 
-把本目录放到任意位置（例如 `D:\plugins\dsh-web-chat`），然后在 Harness 会话里让 Agent 执行：
+把本目录放到任意位置（例如 `D:\plugins\dsh-chat-web`），然后在 Harness 会话里让 Agent 执行：
 
 ```text
 plugin_manager install_bundle  target = <该目录的绝对路径>
@@ -43,8 +43,8 @@ plugin_manager install_bundle  target = <该目录的绝对路径>
 
 1. 复制本目录到任意位置（保持 `package.json` 在根）；
 2. 编辑 `%USERPROFILE%\.dsh\profiles\desktop\package.json`：
-   - `dependencies` 增加 `"dsh-web-chat": "file:<绝对路径>"`
-   - `dsh.profile.bundles` 数组加入 `"dsh-web-chat"`
+   - `dependencies` 增加 `"dsh-chat-web": "file:<绝对路径>"`
+   - `dsh.profile.bundles` 数组加入 `"dsh-chat-web"`
 3. 在 profile 目录执行 `pnpm install`；
 4. 重启 Harness。
 
@@ -53,7 +53,7 @@ plugin_manager install_bundle  target = <该目录的绝对路径>
 发布到 npm 后可以按包名安装，不用把目录拷来拷去：
 
 ```text
-plugin_manager install_bundle  target = dsh-web-chat
+plugin_manager install_bundle  target = dsh-chat-web
 ```
 
 Harness 会通过当前的 npm registry 拉取该包并装进 profile。
@@ -113,7 +113,7 @@ node tools/test-detect.mjs  # 本机浏览器 token 自动读取自检（会真�
 git init
 git add .
 git commit -m "feat: sidebar work/chat switch with DeepSeek web history"
-git remote add origin https://github.com/William-JT-Shen/dsh-web-chat.git
+git remote add origin https://github.com/William-JT-Shen/dsh-chat-web.git
 git push -u origin main
 
 # npm
