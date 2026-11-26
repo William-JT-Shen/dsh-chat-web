@@ -1,6 +1,6 @@
 {
   "name": "dsh-chat-web",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sidebar Work/Chat switch for DeepSeek Harness with a live chat.deepseek.com history panel and one-click continuation as real Harness sessions.",
   "keywords": [
     "dsh",
