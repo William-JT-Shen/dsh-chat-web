@@ -1,0 +1,62 @@
+{
+  "name": "dsh-web-chat",
+  "version": "0.1.0",
+  "description": "Sidebar Work/Chat switch for DeepSeek Harness with a live chat.deepseek.com history panel and one-click continuation as real Harness sessions.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "sidebar",
+    "chat-history"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "William-JT-Shen",
+    "url": "https://github.com/William-JT-Shen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William-JT-Shen/dsh-web-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/William-JT-Shen/dsh-web-chat/issues"
+  },
+  "homepage": "https://github.com/William-JT-Shen/dsh-web-chat#readme",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "token-store.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

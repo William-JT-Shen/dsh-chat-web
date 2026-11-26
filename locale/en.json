@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar Work/Chat + DeepSeek web history",
+    "description": "Adds a Work/Chat switch directly above New Session. In Chat mode the workspace area is replaced by your chat.deepseek.com history, and any web conversation can be continued as a real Harness session."
+  }
+}

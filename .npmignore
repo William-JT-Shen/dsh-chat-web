@@ -1,0 +1,9 @@
+# Only the runtime bundle is published; tests, tools and local data stay out.
+test/
+tools/
+diagnostics/
+web-chat-sync/
+*.bak
+*.tmp
+client.js.tmp
+.gitignore
